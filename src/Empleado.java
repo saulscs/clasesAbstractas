@@ -1,5 +1,6 @@
 public  class Empleado extends Persona {
 
+    //1. Atributos
     private Double sueldoBruto;
 
     public Empleado(String nombre, Integer edad, Double sueldoBruto) {
@@ -7,9 +8,11 @@ public  class Empleado extends Persona {
         this.sueldoBruto = sueldoBruto;
     }
 
+    //sobre escribimos la clase mostrar
     @Override
     public void mostrar(String s) {}
 
+    //Metodo calcular sueldo neto
 
     public  void sueldoNeto(Double w){
        Double sn;
